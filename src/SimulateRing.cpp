@@ -1,10 +1,12 @@
 #include "SimulateRing.hpp"
 
+#include <cstdio>
 #include <vector>
 
 #include "NodeRing.hpp"
 
 void SimulateRing::run() {
+    printf("Starting Ring election simulation\n");
     std::vector<NodeRing*> nodes;
 
     NodeRing* first = new NodeRing(0);
