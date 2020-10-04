@@ -16,4 +16,6 @@ class NodeBase {
     virtual void addNeighbor(NodeType* node) = 0;
     virtual void startElection() = 0;
     virtual bool receiveMsg(uint32_t id, MessageType msgType) = 0;
+
+    void fail() { this->failed = true; }
 };

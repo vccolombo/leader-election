@@ -2,7 +2,8 @@
 
 #include "SimulateBase.hpp"
 
-class SimulateRing : protected SimulateBase {
+class SimulateBully : protected SimulateBase {
+   private:
    public:
     void run() override;
 };
